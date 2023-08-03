@@ -30,8 +30,6 @@ import { cn } from "@/lib/utils";
 import { Calendar } from "../ui/calendar";
 import { format } from "date-fns";
 
-import { useState } from "react";
-
 const formSchema = z
   .object({
     name: z.string().min(2),
@@ -52,8 +50,6 @@ const formSchema = z
   });
 
 export default function OnlineDialog() {
-  const [time, setTime] = useState<TimeValue | null>(null);
-
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
