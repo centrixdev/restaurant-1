@@ -6,6 +6,7 @@ import AnimatedLogo from "@/components/sections/AnimatedLogo";
 import HeroImage from "@/components/sections/HeroImage";
 import OpeningImage from "@/components/sections/OpeningImage";
 import { OpeningHours } from "@/components/sections/OpeningHours";
+import Link from "next/link";
 export default function Home() {
   return (
     <main>
@@ -19,16 +20,20 @@ export default function Home() {
             <h2 className="text-black ">Musterstraße 42a, 12345 Musterstadt</h2>
             <div className="flex flex-col gap-2 mt-4">
               <Button>
-                Tisch Reservieren
-                <span className="ml-1">
-                  <AiOutlineRight />
-                </span>
+                <Link href="/reservieren">
+                  Tisch Reservieren
+                  <span className="ml-1">
+                    <AiOutlineRight />
+                  </span>
+                </Link>
               </Button>
               <Button variant={"outline"}>
-                Bestellen
-                <span className="ml-1">
-                  <TbTruckDelivery />
-                </span>
+                <Link href="/reservieren">
+                  Bestellen
+                  <span className="ml-1">
+                    <TbTruckDelivery />
+                  </span>
+                </Link>
               </Button>
             </div>
           </div>
