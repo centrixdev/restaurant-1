@@ -152,7 +152,6 @@ export default function Speisekarte() {
   return (
     <main className="w-full flex items-center flex-col py-8 bg-zinc-200">
       <h1 className="text-5xl md:text-6xl my-4">SPEISEKARTE</h1>
-      <OnlineDialog />
       <section id="Speisekarte">
         <Tabs defaultValue={categories[0].name} className="w-[400px]">
           <TabsList className="grid w-full grid-cols-4">
