@@ -12,6 +12,7 @@ export default function HeroImage() {
   return (
     <motion.div style={{ y }} className="absolute bg-zinc-800 -z-20">
       <Image
+        loading="eager"
         className="object-cover h-[150vh] opacity-30 "
         src="/images/restaurant.jpg"
         alt="Restaurant"

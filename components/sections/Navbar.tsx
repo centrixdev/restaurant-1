@@ -156,7 +156,12 @@ function Navigation() {
         <div className="flex md:hidden items-center space-x-4 font-serif">
           <Sheet open={isOpen} onOpenChange={(open) => setIsOpen(open)}>
             <SheetTrigger asChild>
-              <Button slot="section" variant={"outline"} size={"icon"}>
+              <Button
+                slot="section"
+                variant={"outline"}
+                size={"icon"}
+                aria-label="menu"
+              >
                 <AiOutlineMenu />
               </Button>
             </SheetTrigger>
