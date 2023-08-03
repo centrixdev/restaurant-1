@@ -1,4 +1,4 @@
-import Link from "next/link";
+import { Metadata } from "next";
 
 const points: { title: string; text: string }[] = [
   {
@@ -35,6 +35,9 @@ const points: { title: string; text: string }[] = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Datenschutz - MAMMA MIA",
+};
 export default function Impressum() {
   return (
     <main className="py-8 bg-zinc-200 flex flex-col items-center">

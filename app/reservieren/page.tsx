@@ -1,9 +1,12 @@
 import OnlineDialog from "@/components/sections/OnlineDialog";
 import CallDialog from "@/components/sections/CallDialog";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { AiFillPhone } from "react-icons/ai";
 
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Reservieren - MAMMA MIA",
+};
 export default function Speisekarte() {
   return (
     <main className="w-full h-[62vh] flex items-center justify-center flex-col py-8 bg-zinc-200">

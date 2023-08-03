@@ -1,6 +1,4 @@
-import OnlineDialog from "@/components/sections/OnlineDialog";
-import OpeningImage from "@/components/sections/OpeningImage";
-import { Button } from "@/components/ui/button";
+import { Metadata } from "next";
 import {
   Card,
   CardContent,
@@ -148,6 +146,9 @@ const categories: Category[] = [
   },
 ];
 
+export const metadata: Metadata = {
+  title: "Speisekarte - MAMMA MIA",
+};
 export default function Speisekarte() {
   return (
     <main className="w-full flex items-center flex-col py-8 bg-zinc-200">

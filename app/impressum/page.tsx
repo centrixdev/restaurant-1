@@ -1,5 +1,9 @@
 import Link from "next/link";
+import { Metadata } from "next";
 
+export const metadata: Metadata = {
+  title: "Impressum - MAMMA MIA",
+};
 export default function Impressum() {
   return (
     <main className="py-8 bg-zinc-200 flex flex-col items-center h-[62vh]">

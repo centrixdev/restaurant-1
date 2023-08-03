@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 
 interface Member {
@@ -33,6 +34,10 @@ const team: Member[] = [
     image: "https://picsum.photos/300/400",
   },
 ];
+export const metadata: Metadata = {
+  title: "Über uns - MAMMA MIA",
+};
+
 export default function About() {
   return (
     <main className="w-full flex items-center flex-col py-8 bg-zinc-200">

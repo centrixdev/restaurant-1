@@ -17,8 +17,8 @@ const crimson = Crimson_Text({
 });
 
 export const metadata: Metadata = {
-  title: "Diner Website",
-  description: "Website created by Dominik",
+  title: "MAMMA MIA",
+  description: "Website Demo by Dominik",
 };
 
 export default function RootLayout({
