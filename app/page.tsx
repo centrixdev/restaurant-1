@@ -19,22 +19,22 @@ export default function Home() {
           <div className="font-serif my-4 text-lg bg-neutral-200 px-12 py-6 text-left ">
             <h2 className="text-black ">Musterstraße 42a, 12345 Musterstadt</h2>
             <div className="flex flex-col gap-2 mt-4">
-              <Button>
-                <Link href="/reservieren">
+              <Link href="/reservieren">
+                <Button className="w-full">
                   Tisch Reservieren
                   <span className="ml-1">
                     <AiOutlineRight />
                   </span>
-                </Link>
-              </Button>
-              <Button variant={"outline"}>
-                <Link href="/reservieren">
+                </Button>
+              </Link>
+              <Link href="/reservieren">
+                <Button variant={"outline"} className="w-full">
                   Bestellen
                   <span className="ml-1">
                     <TbTruckDelivery />
                   </span>
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </div>
           </div>
         </div>
